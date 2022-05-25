@@ -56,7 +56,7 @@ const HeaderSearch = (props) => {
         className={inputClass}
         value={value}
         options={restProps.options}
-        onChange={setValue}
+        onChange={(completeValue) => setValue(completeValue)}
       >
         <Input
           size="small"

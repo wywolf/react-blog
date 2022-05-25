@@ -5,6 +5,7 @@ import pages from './bn-BD/pages';
 import pwa from './bn-BD/pwa';
 import settingDrawer from './bn-BD/settingDrawer';
 import settings from './bn-BD/settings';
+
 export default {
   'navBar.lang': 'ভাষা',
   'layout.user.link.help': 'সহায়তা',

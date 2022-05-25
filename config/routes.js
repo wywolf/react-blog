@@ -4,14 +4,9 @@ export default [
     layout: false,
     routes: [
       {
-        path: '/user',
-        routes: [
-          {
-            name: 'login',
-            path: '/user/login',
-            component: './user/Login',
-          },
-        ],
+        name: 'login',
+        path: '/user/login',
+        component: './user/Login',
       },
       {
         component: './404',
