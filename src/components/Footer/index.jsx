@@ -1,12 +1,12 @@
-import { useIntl } from 'umi';
 import { GithubOutlined } from '@ant-design/icons';
 import { DefaultFooter } from '@ant-design/pro-layout';
+import { useIntl } from 'umi';
 
 const Footer = () => {
   const intl = useIntl();
   const defaultMessage = intl.formatMessage({
     id: 'app.copyright.produced',
-    defaultMessage: '蚂蚁集团体验技术部出品',
+    defaultMessage: 'Leo出品',
   });
   const currentYear = new Date().getFullYear();
   return (
@@ -14,21 +14,21 @@ const Footer = () => {
       copyright={`${currentYear} ${defaultMessage}`}
       links={[
         {
-          key: 'Ant Design Pro',
-          title: 'Ant Design Pro',
-          href: 'https://pro.ant.design',
+          key: 'cnblog',
+          title: '博客园',
+          href: 'https://www.cnblogs.com/wyLeoKing/',
           blankTarget: true,
         },
         {
           key: 'github',
           title: <GithubOutlined />,
-          href: 'https://github.com/ant-design/ant-design-pro',
+          href: 'https://wywolf.github.io/leo.github.io/',
           blankTarget: true,
         },
         {
-          key: 'Ant Design',
-          title: 'Ant Design',
-          href: 'https://ant.design',
+          key: 'yuque',
+          title: '语雀',
+          href: 'https://www.yuque.com/u22414866',
           blankTarget: true,
         },
       ]}

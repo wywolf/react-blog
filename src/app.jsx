@@ -23,7 +23,7 @@ export async function getInitialState() {
       //   return msg.data;
       //   直接返回用户信息,去掉登录页面.第二步src/pages/user/Login/index.jsx 去掉 if 判断,并 setUserLoginState用户数据
       return {
-        name: 'Serati Ma',
+        name: 'Leo',
         avatar: 'https://gw.alipayobjects.com/zos/antfincdn/XAosXuNZyF/BiazfanxmamNRoxxVxka.png',
         userid: '00000001',
         email: 'antdesign@alipay.com',

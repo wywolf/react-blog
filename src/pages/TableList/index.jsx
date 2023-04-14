@@ -1,12 +1,12 @@
+import { addRule, removeRule, rule, updateRule } from '@/services/ant-design-pro/api';
 import { PlusOutlined } from '@ant-design/icons';
-import { Button, message, Input, Drawer } from 'antd';
-import React, { useState, useRef } from 'react';
-import { useIntl, FormattedMessage } from 'umi';
-import { PageContainer, FooterToolbar } from '@ant-design/pro-layout';
-import ProTable from '@ant-design/pro-table';
-import { ModalForm, ProFormText, ProFormTextArea } from '@ant-design/pro-form';
 import ProDescriptions from '@ant-design/pro-descriptions';
-import { rule, addRule, updateRule, removeRule } from '@/services/ant-design-pro/api';
+import { ModalForm, ProFormText, ProFormTextArea } from '@ant-design/pro-form';
+import { FooterToolbar, PageContainer } from '@ant-design/pro-layout';
+import ProTable from '@ant-design/pro-table';
+import { Button, Drawer, Input, message } from 'antd';
+import { useRef, useState } from 'react';
+import { FormattedMessage, useIntl } from 'umi';
 import UpdateForm from './components/UpdateForm';
 /**
  * @en-US Add node
@@ -238,6 +238,116 @@ const TableList = () => {
   ];
   return (
     <PageContainer>
+      <article id="page">
+        <div className="article-container">
+          {/* <h2>wy音乐</h2>
+          <meting-js auto="https://music.163.com/#/discover/toplist?id=3778678" />
+          <hr /> */}
+
+          {/* <h2>技能属性</h2>
+          <div className="skillbox">
+            <div className="skillbar">
+              <div
+                className="skillbar-title"
+                style="
+                      background: linear-gradient(
+                        to right,
+                        #ff0066 0%,
+                        #ff00cc 100%
+                      );
+                      width: 75%;
+                    "
+              >
+                <span>JavaScript</span>
+              </div>
+              <div className="skill-bar-percent">85%</div>
+            </div>
+            <div className="skillbar">
+              <div
+                className="skillbar-title"
+                style="
+                      background: linear-gradient(
+                        to right,
+                        #9900ff 0%,
+                        #cc66ff 100%
+                      );
+                      width: 40%;
+                    "
+              >
+                <span>webpack</span>
+              </div>
+              <div className="skill-bar-percent">60%</div>
+            </div>
+            <div className="skillbar">
+              <div
+                className="skillbar-title"
+                style="
+                      background: linear-gradient(
+                        to right,
+                        #2196f3 0%,
+                        #42a5f5 100%
+                      );
+                      width: 60%;
+                    "
+              >
+                <span>nodeJs</span>
+              </div>
+              <div className="skill-bar-percent">40%</div>
+            </div>
+            <div className="skillbar">
+              <div
+                className="skillbar-title"
+                style="
+                      background: linear-gradient(
+                        to right,
+                        #00bcd4 0%,
+                        #80deea 100%
+                      );
+                      width: 70%;
+                    "
+              >
+                <span>react</span>
+              </div>
+              <div className="skill-bar-percent">75%</div>
+            </div>
+            <div className="skillbar">
+              <div
+                className="skillbar-title"
+                style="
+                      background: linear-gradient(
+                        to right,
+                        #4caf50 0%,
+                        #81c784 100%
+                      );
+                      width: 60%;
+                    "
+              >
+                <span>antd</span>
+              </div>
+              <div className="skill-bar-percent"> 95%</div>
+            </div>
+            <div className="skillbar">
+              <div
+                className="skillbar-title"
+                style="
+                      background: linear-gradient(
+                        to right,
+                        #ffeb3b 0%,
+                        #fff176 100%
+                      );
+                      width: 75%;
+                    "
+              >
+                <span>数据结构与算法</span>
+              </div>
+              <div className="skill-bar-percent">75%</div>
+            </div>
+          </div> */}
+
+          <hr />
+        </div>
+      </article>
+
       <ProTable
         headerTitle={intl.formatMessage({
           id: 'pages.searchTable.title',
